@@ -25,7 +25,7 @@ end
 def apply_coupons(cart, coupons)
   binding.pry
   cart.each do |item|
-  
+
     coupons.each do |coupon_hash|
       if coupon_hash[:item] == item.keys[0]
         recepit_coupon = Hash.new
