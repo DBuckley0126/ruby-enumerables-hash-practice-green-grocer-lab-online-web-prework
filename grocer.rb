@@ -1,6 +1,6 @@
 require "pry"
 
-def consolidate_cart(cart)
+def onsolidate_cart(cart)
   cart_hash = Hash.new
 
   cart.each do |element_pair|
