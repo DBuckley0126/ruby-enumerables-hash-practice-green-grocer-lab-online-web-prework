@@ -10,7 +10,7 @@ def consolidate_cart(cart)
       cart_hash[:element_pair.keys[0]][:count] =+ 1
 
     else
-      temp_hash[element_pair.keys] = element_pair.values
+      temp_hash[element_pair.keys[0]] = element_pair.values[0]
       binding.pry
       cart_hash.merge!(temp_hash)
 
