@@ -9,10 +9,8 @@ def consolidate_cart(cart)
     hash_key = element_pair.keys[0]
     hash_value = element_pair.values[0]
 
-
-
     if cart_hash.has_key?(hash_key)
-      cart_hash[hash_key][:count] =+ 1
+      cart_hash[hash_key][:count] += 1
 
     else
       temp_hash[hash_key] = hash_value
