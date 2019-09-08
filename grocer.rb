@@ -30,7 +30,7 @@ def apply_coupons(cart, coupons)
       if coupon_hash[:item] == item.keys[0]
         recepit_coupon = Hash.new
         recepit_coupon_name = coupon_hash[:item] + " W/COUPON"
-        
+
 
       else
 
