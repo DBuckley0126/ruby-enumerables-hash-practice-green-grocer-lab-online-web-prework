@@ -2,24 +2,24 @@ require "pry"
 
 def consolidate_cart(cart)
   cart_hash = Hash.new
-
+  temp_hash = Hash.new
 
   cart.each do |element_pair|
 
     hash_key = element_pair.keys[0]
     hash_value = element_pair.values[0]
 
-    binding.pry
+    #binding.pry
 
     if cart_hash.has_key?(hash_key)
-      cart_hash[:hash_key][:count] =+ 1
+      cart_hash[hash_key][:count] =+ 1
 
     else
-      temp_hash[element_pair.keys[0]] = element_pair.values[0][0]
+      temp_hash[hash_key] = hash_value
 
       cart_hash.merge!(temp_hash)
 
-      cart_hash[:element_pair.keys[0]].store(:count, 1)
+      cart_hash[hash_key.store(:count, 1)
     end
   end
 cart_hash
