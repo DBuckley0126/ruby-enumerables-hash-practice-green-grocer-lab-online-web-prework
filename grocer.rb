@@ -6,7 +6,7 @@ def consolidate_cart(cart)
 
   cart.each do |element_pair|
 
-    hash_key = :element_pair.keys[0]
+    hash_key = element_pair.keys[0]
     hash_value = element_pair.values[0]
 
     binding.pry
