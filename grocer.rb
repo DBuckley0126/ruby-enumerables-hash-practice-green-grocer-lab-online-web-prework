@@ -11,8 +11,9 @@ def consolidate_cart(cart)
 
     else
       temp_hash[element_pair.keys[0]] = element_pair.values[0]
-    #  binding.pry
+
       cart_hash.merge!(temp_hash)
+      binding.pry
       cart_hash[:element_pair.keys[0]].store(:count, 1)
     end
   end
