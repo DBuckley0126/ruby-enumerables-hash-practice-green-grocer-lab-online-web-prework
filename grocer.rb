@@ -13,7 +13,7 @@ def consolidate_cart(cart)
       #binding.pry
       cart_hash.merge!(temp_hash)
       cart_hash[:element_pair.keys.store(:count, 1)]
-      gp cart_hash
+      p cart_hash
     end
   end
 cart_hash
