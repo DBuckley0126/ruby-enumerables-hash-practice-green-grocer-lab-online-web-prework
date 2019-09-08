@@ -22,7 +22,7 @@ def consolidate_cart(cart)
       cart_hash[hash_key].store(:count, 1)
     end
   end
-  binding.pry
+  #binding.pry
 cart_hash
 end
 
