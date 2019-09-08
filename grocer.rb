@@ -9,7 +9,7 @@ def consolidate_cart(cart)
     hash_key = element_pair.keys[0]
     hash_value = element_pair.values[0]
 
-    #binding.pry
+
 
     if cart_hash.has_key?(hash_key)
       cart_hash[hash_key][:count] =+ 1
@@ -22,6 +22,7 @@ def consolidate_cart(cart)
       cart_hash[hash_key].store(:count, 1)
     end
   end
+  binding.pry
 cart_hash
 end
 
