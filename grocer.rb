@@ -19,7 +19,7 @@ def consolidate_cart(cart)
 
       cart_hash.merge!(temp_hash)
 
-      cart_hash[hash_key.store(:count, 1)
+      cart_hash[hash_key].store(:count, 1)
     end
   end
 cart_hash
