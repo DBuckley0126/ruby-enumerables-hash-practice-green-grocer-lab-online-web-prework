@@ -5,7 +5,6 @@ def consolidate_cart(cart)
   temp_hash = Hash.new
 
   cart.each do |element_pair|
-
     hash_key = element_pair.keys[0]
     hash_value = element_pair.values[0]
 
@@ -20,12 +19,14 @@ def consolidate_cart(cart)
       cart_hash[hash_key].store(:count, 1)
     end
   end
-  #binding.pry
-cart_hash
+  cart_hash
 end
 
 def apply_coupons(cart, coupons)
-  # code here
+  
+  cart.each do |item|
+    binding.pry
+  end
 end
 
 def apply_clearance(cart)
