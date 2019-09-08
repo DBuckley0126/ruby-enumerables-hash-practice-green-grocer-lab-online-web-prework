@@ -1,5 +1,20 @@
+require "pry"
+
 def consolidate_cart(cart)
-  # code here
+  cart_hash = Hash.new
+
+  cart.each do |element_pair|
+
+    if cart_hash.has_key?(element_pair.keys)
+      cart_hash[:element_pair.keys[0]][:count] =+ 1
+      binding.pry
+    else
+      cart_hash.merge!(element_pair.keys[0] => element_pair.values[0])
+      cart_hash[:element_pair.keys[0]].store(:count, 1)
+      p cart_hash
+    end
+  end
+cart_hash
 end
 
 def apply_coupons(cart, coupons)
