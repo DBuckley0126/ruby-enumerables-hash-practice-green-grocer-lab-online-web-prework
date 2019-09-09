@@ -29,7 +29,7 @@ def apply_coupons(cart, coupons)
     coupons.each do |coupon_hash|
 
       if cart.select {|key, value| key = coupon_hash[:name]}
-         recepit_coupon = cart.select {|key, value| key = coupon_hash[:name]}
+         recepit_coupon = cart.select {|key, value| key == coupon_hash[:name]}
          recepit_coupon_name = coupon_hash[:item] + " W/COUPON"
   binding.pry
       end
