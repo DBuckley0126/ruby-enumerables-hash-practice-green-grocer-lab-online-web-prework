@@ -32,11 +32,7 @@ def apply_coupons(cart, coupons)
          recepit_coupon = cart.select {|key, value| key = coupon_hash[:name]}
          recepit_coupon_name = coupon_hash[:item] + " W/COUPON"
   binding.pry
-      else
-
-
-
-    end
+      end
   end
 end
 
